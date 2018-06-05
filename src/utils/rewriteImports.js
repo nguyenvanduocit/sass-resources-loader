@@ -18,7 +18,7 @@ export default (error, file, contents, moduleContext, callback) => {
     return callback(error);
   }
 
-  if (!/\.s[ac]ss$/i.test(file)) {
+  if (!/\.styl$/i.test(file)) {
     return callback(null, contents);
   }
 

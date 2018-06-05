@@ -17,21 +17,21 @@ module.exports = function(source) {
 
   const callback = webpack.async();
 
-  global.__DEBUG__ = process.env.DEBUG === 'sass-resources-loader' || process.env.DEBUG === '*';
+  global.__DEBUG__ = process.env.DEBUG === 'styl-resources-loader' || process.env.DEBUG === '*';
 
   logger.debug(`Hey, we're in DEBUG mode! Yabba dabba doo!`);
 
-  // TODO: Remove `webpack.options.sassResources` support after first stable webpack@2 release
+  // TODO: Remove `webpack.options.stylusResources` support after first stable webpack@2 release
   const isModernWebpack = webpack.version >= 2;
   const resourcesFromConfig =
     isModernWebpack
     ? (loaderUtils.getOptions(this) || {}).resources
-    : webpack.options.sassResources;
+    : webpack.options.stylusResources;
 
   if (!resourcesFromConfig) {
     const error = new Error(`
-      Can't find sass resources in your config.
-      Make sure ${isModernWebpack ? 'loader.options.resources' : 'webpackConfig.sassResources'} exists.
+      Can't find stylus resources in your config.
+      Make sure ${isModernWebpack ? 'loader.options.resources' : 'webpackConfig.stylusResources'} exists.
     `);
 
     return callback(error);

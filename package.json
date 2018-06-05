@@ -1,7 +1,7 @@
 {
-  "name": "sass-resources-loader",
-  "version": "1.3.3",
-  "description": "SASS resources loader for Webpack",
+  "name": "styl-resources-loader",
+  "version": "1.0.0",
+  "description": "Stylus resources loader for Webpack",
   "main": "lib/loader.js",
   "scripts": {
     "start": "npm run lint && npm run clean && npm run dev",
@@ -17,21 +17,17 @@
     "release:minor": "scripts/release minor",
     "release:major": "scripts/release major"
   },
-  "authors": [
-    "Justin Gordon <justin.gordon@gmail.com> (https://github.com/justin808)",
-    "Alex Fedoseev <alex.fedoseev@gmail.com> (https://github.com/alexfedoseev)"
-  ],
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/shakacode/sass-resources-loader.git"
+    "url": "https://github.com/nguyenvanduocit/styl-resources-loader.git"
   },
   "bugs": {
-    "url": "https://github.com/shakacode/sass-resources-loader/issues"
+    "url": "https://github.com/nguyenvanduocit/styl-resources-loader/issues"
   },
   "keywords": [
     "css",
-    "sass",
+    "stylus",
     "webpack"
   ],
   "dependencies": {
